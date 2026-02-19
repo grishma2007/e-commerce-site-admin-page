@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
   
  
-  const addData = () => {
+  const addData = (e) => {
       e.preventDefault();
   axios.post(
   "https://e-commerce-backend-node-js-eyecore.vercel.app/login",
