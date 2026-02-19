@@ -10,6 +10,7 @@ const Login = () => {
   
  
   const addData = () => {
+      e.preventDefault();
   axios.post(
   "https://e-commerce-backend-node-js-eyecore.vercel.app/login",
   { email, password },
