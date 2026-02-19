@@ -26,7 +26,7 @@ const Login = () => {
           alert("login Failed");
       });
   }
-   return (<div className="auth-page">
+   return (<form  onSubmit={addData} className="auth-page">
       <div className="auth-card">
         <h2 className="heading">Login</h2>
         <div className="field">
@@ -40,9 +40,9 @@ const Login = () => {
           <input type="password" placeholder="••••••••" value={password}
             onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button type="submit" className="primary-btn" onClick={addData}>Login</button>
+        <button type="submit" className="primary-btn" >Login</button>
       </div>
-    </div>
+    </form>
   )};
 
 export default Login;
