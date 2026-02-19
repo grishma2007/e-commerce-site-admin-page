@@ -110,7 +110,7 @@ const Register = () => {
         </div>
 
         <div className="btn-group">
-          <button className="primary-btn bn me-3" onClick={addData}>
+          <button type="submit" className="primary-btn bn me-3" onClick={addData}>
             Submit
           </button>
 
