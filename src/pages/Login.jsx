@@ -1,5 +1,5 @@
 import {  useState } from "react";
-import axios from "axios";
+import axios from "axios"; 
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -11,6 +11,7 @@ const Login = () => {
  
   const addData = (e) => {
       e.preventDefault();
+      console.log("Login button clicked"); 
   axios.post(
   "https://e-commerce-backend-node-js-eyecore.vercel.app/login",
   { email, password },
@@ -40,7 +41,7 @@ const Login = () => {
           <input type="password" placeholder="••••••••" value={password}
             onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button className="primary-btn" onClick={addData}>Login</button>
+        <button type="submit" className="primary-btn" onClick={addData}>Login</button>
       </div>
     </div>
   )};
