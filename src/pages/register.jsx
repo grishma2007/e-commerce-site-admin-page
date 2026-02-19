@@ -38,7 +38,7 @@ const Register = () => {
 
     if (!validate()) return;
 
-    axios.post("http://localhost:5000/register", {
+    axios.post("https://e-commerce-backend-node-js-eyecore.vercel.app/register", {
         name,
         email,
         phone,

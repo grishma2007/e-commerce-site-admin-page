@@ -11,7 +11,7 @@ const EditProduct = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
   const [selected, setSelected] = useState(null);
 
   const [form, setForm] = useState({
@@ -29,8 +29,8 @@ const EditProduct = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/products");
-        setProducts(res.data);
+        const res = await axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/products");
+        // setProducts(res.data);
 
         if (res.data.length > 0) {
           let productToEdit;
@@ -72,7 +72,7 @@ const EditProduct = () => {
   const handleUpdateProduct = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/products/${selected._id}`,
+        `https://e-commerce-backend-node-js-eyecore.vercel.app/products/${selected._id}`,
         form
       );
       alert("Product updated successfully ✅");

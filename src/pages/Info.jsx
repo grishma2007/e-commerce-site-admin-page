@@ -16,7 +16,7 @@ const Info = ()=>{
   
   
    useEffect(() => {
-  axios.get('http://localhost:5000/info', { withCredentials: true })
+  axios.get('https://e-commerce-backend-node-js-eyecore.vercel.app/info', { withCredentials: true })
     .then(res => {
       setdata(res.data);
     })
@@ -29,7 +29,7 @@ const Info = ()=>{
 
   const Delete = (_id)=>{
     
-    axios.delete(`http://localhost:5000/info/${_id}`,{ withCredentials: true})
+    axios.delete(`https://e-commerce-backend-node-js-eyecore.vercel.app/info/${_id}`,{ withCredentials: true})
       .then((response)=>{ 
         setnew(response.data.user)
       })
@@ -48,7 +48,7 @@ const handlesave = async () => {
 
   try {
     const res = await axios.put(
-      `http://localhost:5000/info/${current._id}`,
+      `https://e-commerce-backend-node-js-eyecore.vercel.app/info/${current._id}`,
       current,{ withCredentials: true}
     );
 

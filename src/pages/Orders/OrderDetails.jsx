@@ -15,7 +15,7 @@ useEffect(() => {
   const fetchOrders = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/orders",
+        "https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders",
         { withCredentials: true }
       );
 

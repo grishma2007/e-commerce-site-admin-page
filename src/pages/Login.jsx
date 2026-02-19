@@ -11,7 +11,7 @@ const Login = () => {
  
   const addData = () => {
   axios.post(
-  "http://localhost:5000/login",
+  "https://e-commerce-backend-node-js-eyecore.vercel.app/login",
   { email, password },
   { withCredentials: true }
 )
