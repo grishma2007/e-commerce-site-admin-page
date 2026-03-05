@@ -68,7 +68,7 @@ const Register = () => {
   };
 
   return (
-    <div className="auth-page">
+    <form className="auth-page">
       <div className="auth-card">
         <h2 className="heading">Sign UP!</h2>
 
@@ -128,7 +128,7 @@ const Register = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 
