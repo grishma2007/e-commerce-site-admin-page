@@ -37,8 +37,7 @@ const Register = () => {
     e.preventDefault();
 
     console.log("Button clicked!"); 
-    console.log("Validation result:", validate()); // Let's see what this returns!
-
+    console.log("Validation result:", validate()); 
     if (!validate()) {
         console.log("Validation failed, stopping here.");
         return; 
