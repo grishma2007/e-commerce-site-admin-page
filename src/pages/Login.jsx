@@ -12,13 +12,13 @@ const Login = () => {
   const addData = (e) => {
       e.preventDefault();
       console.log("Login button clicked"); 
-  axios.post("https://e-commerce-backend-node-js-eyecore.vercel.app/info",
+  axios.post("https://e-commerce-backend-node-js-eyecore.vercel.app/login",
   { email, password },
   { withCredentials: true }
 )
     .then(()=> {
       sessionStorage.setItem("isLoggedIn","true")
-      navigate("/Info")
+      navigate("/info")
       
     })
       .catch(function (error) {
