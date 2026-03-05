@@ -18,7 +18,7 @@ const Login = () => {
 )
     .then(()=> {
       sessionStorage.setItem("isLoggedIn","true")
-      navigate("/Info")
+      navigate("/info")
       
     })
       .catch(function (error) {
