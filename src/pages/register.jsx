@@ -36,7 +36,16 @@ const Register = () => {
   const addData = (e) => {
     e.preventDefault();
 
-    if (!validate()) return;
+    console.log("Button clicked!"); 
+    console.log("Validation result:", validate()); // Let's see what this returns!
+
+    if (!validate()) {
+        console.log("Validation failed, stopping here.");
+        return; 
+    }
+
+    console.log("Validation passed, sending request...");
+    // if (!validate()) return;
 
     axios.post("https://e-commerce-backend-node-js-eyecore.vercel.app/register", {
         name,
