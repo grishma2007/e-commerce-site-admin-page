@@ -68,7 +68,7 @@ const Register = () => {
   };
 
   return (
-    <form className="auth-page">
+    <form className="auth-page" onSubmit={addData}>
       <div className="auth-card">
         <h2 className="heading">Sign UP!</h2>
 
@@ -117,9 +117,9 @@ const Register = () => {
             <small className="error">{errors.password}</small>
           )}
         </div>
-
-        <div className="btn-group">
-          <button type="submit" className="primary-btn bn me-3" onClick={addData}>
+<div className="btn-group">
+          {/* 2. Removed onClick from here, relies on form onSubmit */}
+          <button type="submit" className="primary-btn bn me-3">
             Submit
           </button>
 
