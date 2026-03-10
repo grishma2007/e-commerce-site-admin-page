@@ -13,6 +13,7 @@ const Login = () => {
       e.preventDefault();
       console.log("Login button clicked"); 
   axios.post("https://e-commerce-backend-self-five.vercel.app/login",
+  { email, password },
   { withCredentials: true }
 )
     .then(()=> {
