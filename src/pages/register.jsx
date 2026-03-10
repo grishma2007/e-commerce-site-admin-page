@@ -46,7 +46,7 @@ const Register = () => {
     console.log("Validation passed, sending request...");
     // if (!validate()) return;
 
-    axios.post("https://e-commerce-backend-node-js-eyecore.vercel.app/register", {
+    axios.post("https://e-commerce-backend-self-five.vercel.app/register", {
         name,
         email,
         phone,

@@ -57,7 +57,7 @@ const handleAddProduct = async () => {
     if (image) {
       data.append("image", image);
     }
-await axios.post("https://e-commerce-backend-node-js-eyecore.vercel.app/products", data, {
+await axios.post("https://e-commerce-backend-self-five.vercel.app/products", data, {
   headers: {
     "Content-Type": "multipart/form-data",
   },

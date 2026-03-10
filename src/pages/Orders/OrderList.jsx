@@ -15,7 +15,7 @@ const OrderList = () => {
 
   useEffect(() => {
     axios
-      .get("https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders", {
+      .get("https://e-commerce-backend-self-five.vercel.app/api/orders", {
         withCredentials: true,
       })
       .then((res) => {
@@ -43,7 +43,7 @@ const filteredOrders = orders.filter((order) => {
     try {
  
 
-      await axios.put(`https://e-commerce-backend-node-js-eyecore.vercel.app/api/orders/${id}/cancel`, 
+      await axios.put(`https://e-commerce-backend-self-five.vercel.app/api/orders/${id}/cancel`, 
         { status: "Cancelled by Seller" }, 
         { withCredentials: true }
       );

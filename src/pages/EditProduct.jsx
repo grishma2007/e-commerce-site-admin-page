@@ -29,7 +29,7 @@ const EditProduct = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("https://e-commerce-backend-node-js-eyecore.vercel.app/products");
+        const res = await axios.get("https://e-commerce-backend-self-five.vercel.app/products");
         // setProducts(res.data);
 
         if (res.data.length > 0) {
@@ -72,7 +72,7 @@ const EditProduct = () => {
   const handleUpdateProduct = async () => {
     try {
       await axios.put(
-        `https://e-commerce-backend-node-js-eyecore.vercel.app/products/${selected._id}`,
+        `https://e-commerce-backend-self-five.vercel.app/products/${selected._id}`,
         form
       );
       alert("Product updated successfully ✅");

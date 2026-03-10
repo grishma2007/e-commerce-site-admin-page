@@ -19,7 +19,7 @@ const AllProducts = () => {
 
   const fetchProducts = () => {
     axios
-      .get("https://e-commerce-backend-node-js-eyecore.vercel.app/products")
+      .get("https://e-commerce-backend-self-five.vercel.app/products")
       .then((res) => setProducts(res.data))   
   };
 
@@ -30,7 +30,7 @@ const handleEdit = (id) => {
 
   const handleDelete = async (id) => {
 
-    await axios.delete(`https://e-commerce-backend-node-js-eyecore.vercel.app/products/${id}`);
+    await axios.delete(`https://e-commerce-backend-self-five.vercel.app/products/${id}`);
     fetchProducts();
     
   };
