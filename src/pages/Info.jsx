@@ -121,14 +121,14 @@ return(
                 </tr>
               </thead>
               <tbody className="info">
-                {Data.length >0?(Data.map((info) => (
-                  <tr key={info._id}>
-                    <td>{info.name}</td>
-                    <td>{info.email}</td>
-                    <td>{info.phone}</td>
+                {Data.length >0?(Data.map((user) => (
+                  <tr key={user._id}>
+                    <td>{user.name}</td>
+                    <td>{user.email}</td>
+                    <td>{user.phone}</td>
                     <td className="actions">
-                      <FaEdit className="edit" onClick={()=>handleshow(info)} />
-                      <FaTrash className="delete" onClick={()=>Delete(info._id)} />
+                      <FaEdit className="edit" onClick={()=>handleshow(user)} />
+                      <FaTrash className="delete" onClick={()=>Delete(user._id)} />
                     </td>
                   </tr>
           ))
