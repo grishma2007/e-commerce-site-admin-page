@@ -235,7 +235,7 @@ const EditProduct = () => {
             <div className="rg-pr">
               {form.image && (
                 <img
-                  src={`http://localhost:5000/${form.image}`}
+                 src={form.image}
                   alt=""
                   style={{ width: "100%", borderRadius: 12 }}
                 />

@@ -98,7 +98,7 @@ const handleEdit = (id) => {
               <tr key={p._id} >
                 <td>
                   <img
-                    src={`https://e-commerce-backend-node-js-eyecore.vercel.app/${p.image}`}
+                    src={p.image}
                     alt=""
                     style={{ width: 50, height: 50, borderRadius: 8 }}
                     />

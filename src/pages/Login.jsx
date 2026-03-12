@@ -11,7 +11,7 @@ const Login = () => {
  
   const addData = (e) => {
       e.preventDefault();
-      console.log("Login button clicked"); 
+    console.log("Sending to backend:", { email, password });
   axios.post("https://e-commerce-backend-self-five.vercel.app/login",
   { email, password },
   { withCredentials: true }
